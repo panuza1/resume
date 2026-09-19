@@ -3,7 +3,7 @@
 		"name": "Panupong Chaichun",
 		"nickname": "",
 		"title": "AI / Machine Learning Engineer",
-		"summary": "Information Technology student at KMUTT focused on AI engineering and machine learning, with practical experience in computer vision, deep learning, data science, software engineering, and intelligent robotics.",
+		"summary": "Information Technology student at KMUTT specializing in AI/ML, Computer Vision, and Data Science, with experience in Software Engineering and Intelligent Robotics.",
 		"phone": "",
 		"email": "panuponghaichun@gmail.com",
 		"github": "panuza1",
@@ -24,14 +24,17 @@
 			"location": "Bangkok, Thailand",
 			"url": "https://fibo.kmutt.ac.th",
 			"startDate": "2025-09-25",
-			"years": ["September 2025", "Present"],
+			"years": [
+				"September 2025",
+				"Present"
+			],
 			"details": [
-				"Extended Unitree G1 robotics software for humanoid arm and dexterous-hand control using Meta Quest 3 tracking, DDS communication, inverse kinematics, and real-time image/control pipelines.",
-				"Developed an Azure Kinect motion pipeline from body tracking and skeleton processing through SMPL pose conversion and ZeroMQ communication for humanoid simulation and control.",
-				"Integrated Inspire RH56DFX dexterous hands with Python control, Modbus RTU over USB-RS485, gesture commands, and force/angle telemetry.",
-				"Integrated MediaPipe and TensorFlow/TFLite hand-gesture recognition with robotic-hand control, including left/right hand detection and two-hand gesture combinations.",
-				"Built a robot-learning data pipeline for Unitree G1 and Inspire dexterous hands, connecting teleoperation demonstrations and robot/camera-state recording to trajectory processing, LeRobot dataset conversion, imitation-learning policy-training workflows, simulation evaluation, and eventual real-robot inference for grasping, pick-and-place, and object manipulation; bottle opening remains a target task.",
-				"Built a motion-capture pipeline from a FOHEART suit through MotionVenus UDP V4003, GMR retargeting, and G1ReferenceProcessor to Unitree G1 29-DoF joint/reference trajectories, with MotionRecorder capture/replay and PKL dataset generation for future whole-body policy training; validated in MuJoCo simulation."
+				"Extended Unitree G1 teleoperation for arm and dexterous-hand control using Meta Quest 3 tracking, DDS, inverse kinematics, and real-time image streaming.",
+				"Adapted Azure Kinect body tracking and SMPL motion processing for humanoid control and simulation via ZeroMQ.",
+				"Integrated Inspire RH56DFX hands with MediaPipe/TFLite gesture recognition, Modbus RTU control, and force/angle telemetry.",
+				"Extended Isaac Lab and LeRobot workflows for manipulation datasets, policy training, replay, and simulation evaluation.",
+				"Integrated FOHEART motion capture with GMR and TeleopIt to generate G1 29-DoF motion datasets for whole-body policy training.",
+				"Developed a web-based control interface and validation tools for teleoperation configuration and testing."
 			]
 		}
 	],
@@ -41,20 +44,16 @@
 			"details": "Python, C, C++, JavaScript/TypeScript, SQL, Bash"
 		},
 		{
-			"section": "Robotics & AI:",
-			"details": "Unitree G1, Inspire RH56DFX, Isaac Sim / Isaac Lab, MuJoCo, ROS 2, DDS, LeRobot, Robot Learning"
-		},
-		{
-			"section": "Motion Capture:",
-			"details": "FOHEART, MotionVenus, GMR"
+			"section": "AI / ML:",
+			"details": "TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, TensorFlow Lite"
 		},
 		{
 			"section": "Computer Vision:",
-			"details": "OpenCV, MediaPipe, Azure Kinect, TensorFlow Lite"
+			"details": "OpenCV, MediaPipe, Azure Kinect"
 		},
 		{
-			"section": "Data Science / ML:",
-			"details": "Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch"
+			"section": "Robotics:",
+			"details": "Unitree G1, Inspire RH56DFX, Isaac Sim / Isaac Lab, MuJoCo, ROS 2, DDS, LeRobot"
 		},
 		{
 			"section": "Software:",
@@ -68,48 +67,79 @@
 	"projects": [
 		{
 			"name": "Inspire Hand Mimic — Vision-Based Robotic Hand Control",
-			"details": "Integrated MediaPipe hand landmarks and TensorFlow/TFLite gesture recognition with Inspire RH56DFX control, including left/right hand detection, two-hand gesture combinations, and Modbus RTU over USB-RS485.",
+			"details": "Integrated MediaPipe/TFLite hand-gesture recognition with Inspire RH56DFX control, supporting two-hand gesture mapping, Modbus RTU, and telemetry.",
 			"url": "github.com/panuza1/inspire-hand-mimic",
 			"hide": false
 		},
 		{
-			"name": "Thai Election OCR Pipeline — Super AI Engineer Season 6 Agentic Pipeline Hackathon: 2026 Thai Election OCR Challenge",
-			"details": "Built a multimodal pipeline for Thai election forms (สส.6/1), combining Typhoon Vision OCR with LLM-based vote extraction and Pandas to process 846 pages from 300 documents into 10,053 structured CSV submission rows with retry, cache, and resumable processing.",
+			"name": "XR Teleoperation for Unitree G1",
+			"details": "Extended Unitree's XR teleoperation stack with Quest 3 hand tracking, Inspire dexterous hands, locomotion control, and a web-based operator interface.",
+			"url": "github.com/panuza1/xr_teleoperate",
+			"hide": false
+		},
+		{
+			"name": "Azure Kinect to Unitree G1 Motion Pipeline",
+			"details": "Adapted Unitree's Kinect teleoperation pipeline with body tracking, SMPL motion processing, ZeroMQ streaming, replay, and safety handling.",
+			"url": "github.com/panuza1/kinect_teleoperate",
+			"hide": false
+		},
+		{
+			"name": "Unitree G1 + Inspire Simulation",
+			"details": "Extended Unitree's Isaac Lab environment to support G1 with Inspire dexterous hands for pick-and-place, manipulation, and simulation validation.",
+			"url": "github.com/panuza1/unitree_sim_isaaclab",
+			"hide": false
+		},
+		{
+			"name": "Unitree G1 Robot Learning Pipeline",
+			"details": "Adapted Unitree LeRobot workflows for manipulation dataset conversion, policy training, replay, simulation evaluation, and robot inference testing.",
+			"url": "github.com/panuza1/unitree_lerobot",
+			"hide": false
+		},
+		{
+			"name": "FOHEART to Unitree G1 Motion Capture",
+			"details": "Integrated FOHEART motion capture with GMR and TeleopIt to retarget human motion into G1 29-DoF trajectories for training datasets.",
+			"url": "github.com/panuza1/foheart_linux",
+			"hide": false
+		},
+		{
+			"name": "Thai Election OCR Pipeline",
+			"details": "Developed a Typhoon Vision and LLM pipeline to extract structured election data from 846 pages across 300 Thai election documents.",
 			"url": "",
 			"hide": false
 		},
 		{
-			"name": "Course Add/Drop Management System — Integrated Project",
-			"details": "Collaborated on a university course add/drop system using vanilla JavaScript/Vite, Express, Prisma, and MySQL; implemented Keycloak authentication, study-plan declaration workflows, REST API integration, and Docker/Nginx deployment support.",
+			"name": "Course Add/Drop Management System",
+			"details": "Collaborated on a university enrollment platform using Vite, Express, Prisma, MySQL, Keycloak, Docker, and Nginx.",
 			"url": "github.com/IT-BANGMOD-INTEGRATED-PROJECT-2025/intproj25-SSA3",
 			"hide": false
 		},
 		{
-			"name": "Dev Recall — Local Developer Memory CLI",
-			"details": "Built a local-first Python CLI that indexes shell history, Git commits, and developer runbooks in SQLite with FTS5 full-text search and weekly development digests.",
+			"name": "Dev Recall — Developer Memory CLI",
+			"details": "Built a local-first Python CLI that indexes shell history, Git commits, and runbooks using SQLite FTS5 for search and weekly digests.",
 			"url": "github.com/panuza1/Dev-Recall",
-			"hide": true
+			"hide": false
+		},
+		{
+			"name": "Memory OS — Personal Organizer",
+			"details": "Built a local FastAPI application for notes, tasks, journaling, authentication, and full-text search using SQLite FTS5.",
+			"url": "github.com/panuza1/proj_eng_memory",
+			"hide": false
 		}
 	],
 	"achievements": [
 		{
 			"name": "Super AI Engineer Season 6 — Foundation AI (Theory), AIAT, 2026",
-			"details": "Passed the Foundation AI (Theory) level covering Python, data science, machine learning, deep learning, image processing, computer vision, NLP, RAG, and AI fundamentals.",
-			"hide": false
-		},
-		{
-			"name": "Super AI Engineer Season 6 — AI Online Hackathon Practice",
-			"details": "Completed practice challenges: From Data to Insight; 2026 Thai Election OCR Challenge; and FahMai RAG Hackathon.",
+			"details": "Passed Foundation AI (Theory), covering machine learning, deep learning, computer vision, NLP, RAG, and data science.",
 			"hide": false
 		},
 		{
 			"name": "Kaggle — NVIDIA Nemotron Model Reasoning Challenge",
 			"details": "Private leaderboard score 0.848 (rank 666).",
-			"hide": true
+			"hide": false
 		}
 	],
 	"interests": [],
-	"_todo": "Education dates and GPA: TODO. Integrated Project: TODO until the exact university repository is confirmed.",
+	"_todo": "Education dates and GPA: TODO.",
 	"resumeUrl": {
 		"sourceLink": "https://github.com/panuza1/resume",
 		"fullVersionLink": "https://github.com/panuza1/resume"
