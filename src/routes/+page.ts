@@ -1,3 +1,4 @@
+import { base } from '$app/paths';
 import type { IProfileResp } from '../types';
 import type { PageLoad } from './$types';
 
@@ -5,7 +6,7 @@ import type { PageLoad } from './$types';
 // the résumé content into the static HTML, so crawlers, ATS scrapers, and
 // social previews see the real data instead of an empty template.
 export const load: PageLoad = async ({ fetch }) => {
-	const resp = await fetch('/data/profile.json');
+	const resp = await fetch(`${base}/data/profile.json`);
 	const profile: IProfileResp = await resp.json();
 
 	return { profile };
