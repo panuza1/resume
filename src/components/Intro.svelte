@@ -24,46 +24,60 @@
 	} = $props();
 </script>
 
-<div class="flex flex-wrap flex-row gap-x-4 text-sm sm:text-base">
-	<div class="flex-1 basis-[45%] sm:basis-0 text-left sm:py-4 sm:w-48 break-words">
-		<p><a href={`tel:${phone}`}>{phone}</a></p>
-		<p><a href={`mailto:${email}`}>{email}</a></p>
-		<p>{location}</p>
-	</div>
-
+<div class="flex flex-col items-center justify-center print:flex-col text-sm sm:text-base gap-2">
 	<h2
-		class="flex-none basis-full sm:basis-auto order-first sm:order-none print:order-none text-3xl sm:text-2xl md:text-3xl lg:text-6xl text-center px-0 py-2 sm:p-4 print:pt-0 break-words"
+		class="text-3xl sm:text-3xl md:text-4xl lg:text-6xl print:text-4xl text-center print:pt-0 break-words"
 	>
 		{name}
-		<span class="block -mt-1 text-base lg:text-lg">({nickname})</span>
-		{#if title}
-			<span class="block mt-1 text-base sm:text-lg lg:text-xl font-semibold">{title}</span>
-		{/if}
 	</h2>
 
-	<div
-		class="flex-1 basis-[45%] sm:basis-0 text-right sm:py-4 sm:w-48 text-sm sm:text-base break-words print:text-right"
-	>
-		<p>
-			<a href={`https://github.com/${github}`} target="_blank" rel="noreferrer"
-				>github.com/{github}</a
-			>
-		</p>
-		<p>
-			<a href={`https://${website}`} target="_blank" rel="noreferrer">{website}</a>
-		</p>
-		<p>
-			<a href={`https://linkedin.com/in/${linkedin}`} target="_blank" rel="noreferrer">Linkedin</a>
-		</p>
-	</div>
-</div>
+	{#if nickname || title}
+		<div class="text-center font-semibold">
+			{#if nickname}({nickname}){/if}
+			{#if nickname && title}
+				·
+			{/if}
+			{#if title}{title}{/if}
+		</div>
+	{/if}
 
-{#if summary}
-	<p class="text-left text-sm sm:text-base print:text-sm mb-2">{summary}</p>
-{/if}
+	<div
+		class="contacts w-full flex flex-col sm:flex-row print:flex-row flex-wrap justify-center items-center gap-x-2 gap-y-1 text-center print:text-center print:text-xs text-xs sm:text-sm"
+	>
+		{#if location}<p>{location}</p>{/if}
+		{#if phone}<p><a href={`tel:${phone}`}>{phone}</a></p>{/if}
+		{#if email}<p><a href={`mailto:${email}`}>{email}</a></p>{/if}
+		{#if linkedin}
+			<p>
+				<a href={`https://www.linkedin.com/in/${linkedin}`} target="_blank" rel="noreferrer"
+					>linkedin.com/in/{linkedin}</a
+				>
+			</p>
+		{/if}
+		{#if github}
+			<p>
+				<a href={`https://github.com/${github}`} target="_blank" rel="noreferrer"
+					>github.com/{github}</a
+				>
+			</p>
+		{/if}
+		{#if website}
+			<p><a href={`https://${website}`} target="_blank" rel="noreferrer">{website}</a></p>
+		{/if}
+	</div>
+
+	{#if summary}
+		<p class="w-full text-left text-sm sm:text-base print:text-sm">{summary}</p>
+	{/if}
+</div>
 
 <style lang="postcss">
 	a {
 		text-decoration: underline;
+	}
+
+	.contacts p:not(:last-child)::after {
+		content: '•';
+		margin-left: 0.5rem;
 	}
 </style>
