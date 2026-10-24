@@ -64,6 +64,32 @@
 		</section>
 	{/if}
 
+	{#if projects.length}
+		<section>
+			<Hideable>
+				<h2 class="text-xl sm:text-2xl uppercase text-left">Selected AI / ML & Software Projects</h2>
+				<hr />
+
+				<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
+					{#each projects as project (project)}
+						<Hideable hide={project.hide}>
+							<li>
+								{#if project.url}
+									<a href="https://{project.url}" target="_blank" rel="noreferrer"
+										><strong>{project.name}</strong></a
+									>
+								{:else}
+									<strong>{project.name}</strong>
+								{/if}
+								- {project.details}
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
+	{/if}
+
 	{#if workExperiences.length}
 		<section>
 			<Hideable>
@@ -93,32 +119,6 @@
 									>
 									<span class="flex-1">{tech.details}</span>
 								</div>
-							</li>
-						</Hideable>
-					{/each}
-				</ul>
-			</Hideable>
-		</section>
-	{/if}
-
-	{#if projects.length}
-		<section>
-			<Hideable>
-				<h2 class="text-xl sm:text-2xl uppercase text-left">Projects</h2>
-				<hr />
-
-				<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
-					{#each projects as project (project)}
-						<Hideable hide={project.hide}>
-							<li>
-								{#if project.url}
-									<a href="https://{project.url}" target="_blank" rel="noreferrer"
-										><strong>{project.name}</strong></a
-									>
-								{:else}
-									<strong>{project.name}</strong>
-								{/if}
-								- {project.details}
 							</li>
 						</Hideable>
 					{/each}
