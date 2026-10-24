@@ -40,24 +40,24 @@
 	],
 	"technologies": [
 		{
+			"section": "AI / ML:",
+			"details": "PyTorch, TensorFlow, Scikit-learn, TensorFlow Lite, Pandas, NumPy"
+		},
+		{
+			"section": "Computer Vision:",
+			"details": "OpenCV, MediaPipe, Azure Kinect, OCR and vision-language pipelines"
+		},
+		{
 			"section": "Languages:",
 			"details": "Python, C, C++, JavaScript/TypeScript, SQL, Bash"
 		},
 		{
-			"section": "AI / ML:",
-			"details": "TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, TensorFlow Lite"
-		},
-		{
-			"section": "Computer Vision:",
-			"details": "OpenCV, MediaPipe, Azure Kinect"
+			"section": "Software:",
+			"details": "FastAPI, React, Svelte / SvelteKit, Node.js, Vite, SQLite"
 		},
 		{
 			"section": "Robotics:",
 			"details": "Unitree G1, Inspire RH56DFX, Isaac Sim / Isaac Lab, MuJoCo, ROS 2, DDS, LeRobot"
-		},
-		{
-			"section": "Software:",
-			"details": "FastAPI, React, Svelte / SvelteKit, Node.js, Vite, SQLite"
 		},
 		{
 			"section": "Tools:",
@@ -66,9 +66,27 @@
 	],
 	"projects": [
 		{
+			"name": "Thai Election OCR Pipeline",
+			"details": "Built a vision-language and LLM pipeline to extract structured information from 846 pages across 300 Thai election documents.",
+			"url": "",
+			"hide": false
+		},
+		{
+			"name": "Unitree G1 Robot Learning Pipeline",
+			"details": "Adapted LeRobot workflows for manipulation datasets, policy training, replay, and simulation evaluation on Unitree G1.",
+			"url": "github.com/panuza1/unitree_lerobot",
+			"hide": false
+		},
+		{
 			"name": "Inspire Hand Mimic — Vision-Based Robotic Hand Control",
-			"details": "Integrated MediaPipe/TFLite hand-gesture recognition with Inspire RH56DFX control, supporting two-hand gesture mapping, Modbus RTU, and telemetry.",
+			"details": "Integrated MediaPipe and TFLite gesture recognition with Inspire RH56DFX control, two-hand mapping, and real-time telemetry.",
 			"url": "github.com/panuza1/inspire-hand-mimic",
+			"hide": false
+		},
+		{
+			"name": "Azure Kinect to Unitree G1 Motion Pipeline",
+			"details": "Adapted Kinect body tracking and SMPL-based motion processing for humanoid control, with ZeroMQ streaming and replay.",
+			"url": "github.com/panuza1/kinect_teleoperate",
 			"hide": false
 		},
 		{
@@ -78,33 +96,15 @@
 			"hide": false
 		},
 		{
-			"name": "Azure Kinect to Unitree G1 Motion Pipeline",
-			"details": "Adapted Unitree's Kinect teleoperation pipeline with body tracking, SMPL motion processing, ZeroMQ streaming, replay, and safety handling.",
-			"url": "github.com/panuza1/kinect_teleoperate",
-			"hide": false
-		},
-		{
 			"name": "Unitree G1 + Inspire Simulation",
 			"details": "Extended Unitree's Isaac Lab environment to support G1 with Inspire dexterous hands for pick-and-place, manipulation, and simulation validation.",
 			"url": "github.com/panuza1/unitree_sim_isaaclab",
 			"hide": false
 		},
 		{
-			"name": "Unitree G1 Robot Learning Pipeline",
-			"details": "Adapted Unitree LeRobot workflows for manipulation dataset conversion, policy training, replay, simulation evaluation, and robot inference testing.",
-			"url": "github.com/panuza1/unitree_lerobot",
-			"hide": false
-		},
-		{
 			"name": "FOHEART to Unitree G1 Motion Capture",
 			"details": "Integrated FOHEART motion capture with GMR and TeleopIt to retarget human motion into G1 29-DoF trajectories for training datasets.",
 			"url": "github.com/panuza1/foheart_linux",
-			"hide": false
-		},
-		{
-			"name": "Thai Election OCR Pipeline",
-			"details": "Developed a Typhoon Vision and LLM pipeline to extract structured election data from 846 pages across 300 Thai election documents.",
-			"url": "",
 			"hide": false
 		},
 		{
