@@ -2,8 +2,8 @@
 	"intro": {
 		"name": "Panupong Chaichun",
 		"nickname": "",
-		"title": "AI / Machine Learning Engineer | Software Developer",
-		"summary": "Information Technology student at KMUTT focused on machine learning, computer vision, and building practical AI applications. Experienced in software development, data pipelines, and integrating AI with robotics systems.",
+		"title": "AI / Machine Learning Engineer",
+		"summary": "Information Technology student at KMUTT specializing in AI/ML, Computer Vision, and Data Science, with experience in Software Engineering and Intelligent Robotics.",
 		"phone": "",
 		"email": "panuponghaichun@gmail.com",
 		"github": "panuza1",
@@ -40,24 +40,24 @@
 	],
 	"technologies": [
 		{
+			"section": "AI / ML:",
+			"details": "PyTorch, TensorFlow, Scikit-learn, TensorFlow Lite, Pandas, NumPy"
+		},
+		{
+			"section": "Computer Vision:",
+			"details": "OpenCV, MediaPipe, Azure Kinect, OCR and vision-language pipelines"
+		},
+		{
 			"section": "Languages:",
 			"details": "Python, C, C++, JavaScript/TypeScript, SQL, Bash"
 		},
 		{
-			"section": "AI / ML:",
-			"details": "TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, TensorFlow Lite"
-		},
-		{
-			"section": "Computer Vision:",
-			"details": "OpenCV, MediaPipe, Azure Kinect"
+			"section": "Software:",
+			"details": "FastAPI, React, Svelte / SvelteKit, Node.js, Vite, SQLite"
 		},
 		{
 			"section": "Robotics:",
 			"details": "Unitree G1, Inspire RH56DFX, Isaac Sim / Isaac Lab, MuJoCo, ROS 2, DDS, LeRobot"
-		},
-		{
-			"section": "Software:",
-			"details": "FastAPI, React, Svelte / SvelteKit, Node.js, Vite, SQLite"
 		},
 		{
 			"section": "Tools:",
